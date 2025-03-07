@@ -1,4 +1,5 @@
-// components/MedicalForm.tsx;
+/ components/MedicalForm.tsx;
+"use client";
 import React, { useState } from 'react';
 import { Transaction } from '@mysten/sui/transactions';
 import { useCurrentAccount, useSuiClient, useSignTransaction } from '@mysten/dapp-kit';
