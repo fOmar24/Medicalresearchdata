@@ -20,18 +20,18 @@ interface SuiProvidersProps {
 // Create a QueryClient instance
 const queryClient = new QueryClient();
 
-export const SuiProviders: React.FC<SuiProvidersProps> = ({ 
-  children, 
-  network = 'testnet' 
+export const SuiProviders: React.FC<SuiProvidersProps> = ({
+  children,
+  network = 'testnet'
 }) => {
   return (
     <QueryClientProvider client={queryClient}>
       <SuiClientProvider networks={networks} defaultNetwork={network}>
         <WalletProvider>
           {children}
-          <MedicalForm 
-            packageId="0x9a37905ef941cd7f0270f0b363c7d202dd5d105102a590051895589f3959431c" 
-            moduleName="medicalresearchdata" 
+          <MedicalForm
+            packageId="0x9a37905ef941cd7f0270f0b363c7d202dd5d105102a590051895589f3959431c"
+            moduleName="medicalresearchdata"
           />
           <Toaster richColors position="top-right" />
         </WalletProvider>
