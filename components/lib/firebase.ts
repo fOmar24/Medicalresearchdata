@@ -5,7 +5,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Firebase configuration (replace with your Firebase project credentials)
 const firebaseConfig = {
-  apiKey: "AIzaSyDnBl6Ol8Jfp0X42MLBCup916baZCnVrjY",
+  apiKey: "process.env.GOOGLE_API_KEY;",
   authDomain: "medical-research-data.firebaseapp.com",
   projectId: "medical-research-data",
   storageBucket: "medical-research-data.appspot.com", // Fixed URL
